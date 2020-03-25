@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-gap: 20px;
+  max-width: 100%;
+  background: black;
+}
+.header{
+  background: url("top.jpg");
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 655px;
+  text-align: center;
+}
+.header i{
+  display: none;
+}
+.header h2{
+  font-family: Orbitron;
+  position: absolute;
+  font-size: 18px;
+  top: 5px;
+  left: 5px;
+}
+.header .ul1{
+  position: relative;
+  top: 5px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(7, minmax(10px, auto));
+  list-style-type: none;
+  justify-content: center;
+}
+.header .ul2{
+  position: absolute;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, minmax(10px, auto));
+  top: 5px;
+  right: 10px;
+  list-style-type: none;
+}
+.header ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.header ul li a:hover{
+  color: #A9A9A9;
+  transition: 0.6s ease;
+}
+.header .head-content{
+  margin-top: 50px;
+}
+.header .para{
+  margin-top: 370px;
+  color: #fff;
+  font-weight: bold;
+}
+.header .ul4 .li1,.li2{
+  border-right: 1px solid #fff;
+}
+.header .ul4 li{
+  padding: 0px 20px;
+}
+.header .spans .ul4{
+  margin-top: 10px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10px, auto));
+  list-style-type: none;
+  justify-content: center;
+}
+.header .spans .ul4 p{
+  font-size: 14px;
+}
+.header .spans .ul4 li a{
+  position: relative;
+  top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  border: 2px solid white;
+}
+.header .spans .ul4 li a:hover{
+  background: #fff;
+  color: black;
+  transition: 0.4s ease;
+}
+.header .spans .ul4 li a:active{
+  background: black;
+}
+.section-a video{
+  max-width: 100%;
+  padding: 20px;
+}
+.specs table tr td{
+  font-size: 16px;
+  padding: 10px 100px;
+}
+.specs table tr td p{
+  font-size: 12px;
+}
+.specs table{
+  color: #fff;
+}
+.specs{
+  color: #fff;
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+.section-b div{
+  color: #fff;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(50px, auto));
+  padding: 40px;
+}
+.section-b img{
+  max-width: 100%;
+  padding: 20px;
+}
+.section-c div{
+  color: #fff;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(50px, auto));
+  padding: 40px;
+}
+.section-c img{
+  max-width: 100%;
+  padding: 20px;
+}
+.section-d div{
+  color: #fff;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(50px, auto));
+  padding: 40px;
+}
+.section-d img{
+  max-width: 100%;
+  padding: 20px;
+}
+.footer{
+  display: grid;
+  grid-template-rows: repeat(4, minmax(10px, auto));
+  grid-gap: 20px;
+  color: #fff;
+  text-align: center;
+}
+.footer a{
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #A9A9A9;
+  transition: 0.4s ease;
+}
+.footer a:active{
+  color: black;
+}
+.footer .ul3{
+  display: grid;
+  grid-template-columns: repeat(6, minmax(50px, auto));
+  grid-gap: 20px;
+  list-style-type: none;
+  justify-content: center;
+}
+
+
+@media (max-width: 800px){
+  .header .ul1{
+    display: none;
+  }
+  .header .ul2{
+    display: none;
+  }
+  .header i{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+}
+@media (max-width: 630px){
+  .header .ul4{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, auto));
+  }
+  .header .ul4 li{
+    padding: 0px 10px;
+  }
+  .header .ul4 a{
+    display: none;
+  }
+  .footer .ul3{
+    display: block;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px){
+  .header .para{
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .header .ul4 p{
+    text-align: right;
+  }
+  .header .ul4 h1{
+    font-size: 24px;
+  }
+  .specs table tr td{
+    padding: 5px 40px;
+  }
+  .section-b div h1{
+    font-size: 16px;
+  }
+  .section-b p{
+    font-size: 12px;
+  }
+  .section-c div h1{
+    font-size: 16px;
+  }
+  .section-c div p{
+    font-size: 12px;
+  }
+  .section-d div h1{
+    font-size: 16px;
+  }
+  .section-d div p{
+    font-size: 12px;
+  }
+}
